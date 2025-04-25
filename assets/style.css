@@ -99,6 +99,47 @@
     width: 1.2rem;
 }
 
+.promo{
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    box-shadow: 0px 8px 40px 0px #00260314;
+    padding: 2.5rem;
+    margin-top: -4rem;
+}
+.promo_card{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.promo_img{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.promo_img img{
+    height: 100%;
+    width: 100%;
+}
+.promo_title{
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+.promo_title p{
+    margin-bottom: .5rem;
+}
+
+.promo_title span{
+    display: block;
+    margin-top: .5rem;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--gray-color-400);
+}
+
 @media screen and (max-width: 1439.98px) {
     * {
         font-size: 11px;
@@ -161,6 +202,11 @@
     .banner_main {
         flex-direction: column;
     }
+    .promo {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+    
 }
 
 @media screen and (max-width: 376px) {
