@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --primary-color: #00B307;
+    --primary-text-color: #1A1A1A;
+    --white-color: #FFFFFF;
+    --gray-color-500: #808080;
+    --gray-color-400: #999999;
+    --offer-color: #FF8A00;
+    --font-default: "Poppins", sans-serif;
+}
+
+* {
+    font-family: var(--font-default);
+    color: var(--primary-text-color);
+}
+
+.shopery_container {
+    max-width: 1320px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner_main {
+    display: flex;
+    flex-direction: row;
+    margin: 0 -6.25rem;
+}
+
+.banner_left_side {
+    max-width: 44rem;
+    margin-top: 6.25rem;
+    padding-left: 3.5rem;
+}
+
+.banner_right_side {
+    max-width: 51rem;
+    margin-top: 6.25rem;
+}
+
+.banner_subtitle {
+    color: var(--primary-color);
+    font-weight: 500;
+    letter-spacing: 2%;
+    text-transform: uppercase;
+    font-size: .875rem;
+}
+
+.banner_title {
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+.banner_sale {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 1.75rem;
+
+    & span {
+        font-size: 2rem;
+        color: var(--offer-color);
+        font-weight: 600;
+    }
+}
+
+.banner_description {
+    font-size: 0.875rem;
+    color: var(--gray-color-500);
+    line-height: 1.5;
+    margin-top: .75rem;
+    margin-bottom: 2rem;
+}
+
+.btn_primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 9999px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn_primary:hover {
+    background-color: #009906;
+}
+
+.arrow_right::after {
+    content: "\f061";
+    font-family: "Font Awesome 6 Free";
+    margin-left: .80rem;
+    height: 1rem;
+    width: 1.2rem;
+}
+
+@media screen and (max-width: 1439.98px) {
+    * {
+        font-size: 11px;
+    }
+
+    .shopery_container {
+        max-width: 1280px;
+    }
+
+    .banner_main {
+        flex-direction: row;
+        margin: 0 -1rem;
+    }
+}
+
+@media screen and (max-width: 1023.98px) {
+    * {
+        font-size: 8px;
+    }
+
+    .shopery_container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    * {
+        font-size: 8px;
+    }
+
+    .shopery_container {
+        max-width: 850px;
+    }
+
+    .banner_main {
+        flex-direction: row;
+        padding-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    * {
+        font-size: 8px;
+    }
+
+    .shopery_container {
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    * {
+        font-size: 9px;
+    }
+
+    .shopery_container {
+        max-width: 390px;
+    }
+
+    .banner_main {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    * {
+        font-size: 8px;
+    }
+
+    .shopery_container {
+        max-width: 350px;
+    }
+
+}
+
+@media screen and (max-width: 321px) {
+    * {
+        font-size: 6px;
+    }
+
+    .shopery_container {
+        max-width: 310px;
+    }
+}
